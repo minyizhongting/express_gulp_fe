@@ -58,33 +58,33 @@ run-sequence就是控制多个任务进行顺序执行或者并行执行。
 
 ## tasks
 
-### `server`
+#### `server`
 启动服务并监听server.js，gulpfile.js。
 文件修改后网页实时刷新。
 
-### `clean`
+#### `clean`
 删除dist文件夹。
 
-### `combineCss`
+#### `combineCss`
 压缩和推送css文件。
 
-### `combineJs`
+#### `combineJs`
 推送Js文件。
 
-### `combineImgs`
+#### `combineImgs`
 推送img文件。
 
-### `revCss`
+#### `revCss`
 生成带有md5戳的css文件推送到dist。
 
-### `revJs`
+#### `revJs`
 生成带有md5戳的js文件推送到dist。
 
-### `mvHtmlSource`
+#### `mvHtmlSource`
 推送html文件。
 
-### `revCollector`
+#### `revCollector`
 将dist的html文件中的css和js的文件名，替换为加戳的文件名。
 
-### `adjuct_manifest_css`
+#### `adjuct_manifest_css`
 将对应的rev_manifest.json文件中的目录替换成线上需要的目录。
