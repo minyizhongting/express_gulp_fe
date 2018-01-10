@@ -17,41 +17,41 @@ Builds the demo for production to the `dist` folder.
 
 ## devDependencies
 
-### `browser-sync`
+#### `browser-sync`
 当改变代码时，BrowserSync会重新加载页面，若是css文件，会直接添加进css中，页面并不需要再次刷新。<br>
 
 也可以用于静态页面，BrowserSync将启动一个小型服务器，并提供一个URL来查看。
 
-### `gulp-clean`
+#### `gulp-clean`
 删除文件夹及文件。
 
-### `gulp-clean-css`
+#### `gulp-clean-css`
 压缩并清理css文件。
 
-### `gulp-cssimport`
+#### `gulp-cssimport`
 引入css文件中的import语句中，对应的文件的样式。
 
-### `gulp-nodemon`
+#### `gulp-nodemon`
 检测server.js所在目录下的文件，若有改变，就会自动重新启动server.js。
 
-### `gulp-replace`
+#### `gulp-replace`
 替换相应内容。
 
-### `gulp-rev`
+#### `gulp-rev`
 根据文件内容生成md5戳，并替换文件。
 eg：main.css ---> main-3ed1041615.css
 
   rev.manifest()<br>
   会生成一个rev-manifest.json文件，内容为源文件名和加戳文件名的映射。
 
-### `gulp-rev-collector`
+#### `gulp-rev-collector`
 通过manifest文件，将html中引用的文件名替换为加戳后的文件。
 
-### `require-dir`
+#### `require-dir`
 node的工具，可以将文件夹下的文件都require进来。
 可用来管理gulp的tasks。
 
-### `run-sequence`
+#### `run-sequence`
 gulp默认使用最大并发数执行任务，即所有任务几乎都是同时执行，但有时任务是需要有先后次序的，比如要先清理目标目录，然后执行打包。<br>
 run-sequence就是控制多个任务进行顺序执行或者并行执行。
 
