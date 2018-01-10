@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-clean": "^0.3.2",
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-rev": "^7.1.2",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rev-collector": "^1.0.5",
+    "require-dir": "^0.3.1",
+    "gulp-cssimport": "^4.0.1",
+    "run-sequence": "^1.2.2"
+  },
+  "devDependencies": {
+    "json-server": "^0.9.0"
+  },
+  "scripts": {
+    "dev": "gulp dev",
+    "pre": "gulp pre"
+  },
+  "author": "",
+  "license": "ISC"
+}

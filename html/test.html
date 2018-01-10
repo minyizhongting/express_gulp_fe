@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<p>Hello!</p>
+<p class="test"></p>
+<script src="${test.js.url}/jquery.js"></script>
+<script>
+	$.ajax({
+		url:'/aaaaa/aaaaa',
+		dataType:'json',
+		type:'post',
+		success:function(data){
+			$('.test').html(data.content);
+		}
+	});
+</script>
+</body>
+</html>
